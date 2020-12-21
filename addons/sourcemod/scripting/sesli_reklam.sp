@@ -43,7 +43,7 @@ public void OnPluginStart()
 public Action seslireklam(int client, int args)
 {
 	Kontrol[client] = !Kontrol[client];
-	PrintToChat(client, "[SM] %s", Kontrol[client] ? "Sesli reklamlar \x07kapatıldı!":"Sesli reklamlar \x04açıldı!");
+	PrintToChat(client, "[SM] %s", Kontrol[client] ? "Sesli reklamlar \x07açıldı!":"Sesli reklamlar \x04kapatıldı!");
 	return Plugin_Handled;
 }
 
